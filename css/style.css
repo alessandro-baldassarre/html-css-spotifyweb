@@ -37,6 +37,7 @@ div.main-container .side-nav{
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
     
     
 
@@ -63,7 +64,7 @@ div.main-container .side-nav{
     min-height: 60px;
     
     
-    border: 1px solid black;
+    background-color: #010100;
 }
 
     
@@ -73,6 +74,7 @@ div.main-container .side-nav{
 div.main-container .main-content{
     width: calc(100% - 170px);
     height: 100%;
+    overflow: hidden;
 
     background-color: lightblue;
 }
@@ -80,6 +82,7 @@ div.main-container .main-content{
 .main-content-top-banner{
     width: 100%;
     height: 60px;
+    
 
     border: 1px solid black;
 }
@@ -98,10 +101,6 @@ div.footer-container{
 
     width: 100%;
     height: 80px;
+    background-color: #282828;
     
-
-    
-    
-
-    background-color: black;
 }
