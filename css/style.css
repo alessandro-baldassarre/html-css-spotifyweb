@@ -1,145 +1,154 @@
 /* RESET */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
 }
 
 /* COMMON CLASSES*/
-.flex{
+.flex {
     display: flex;
 }
 
-.relative{
+.relative {
     position: relative;
 }
 
-.absolute{
+.absolute {
     position: absolute;
 }
 
 /* MAIN*/
-div.main-container{
+div.main-container {
     width: 100%;
     height: calc(100vh - 80px);
-    
 
-    border: 1px solid red;
 }
 
 /* side nav */
-div.main-container .side-nav{
+div.main-container .side-nav {
     width: 170px;
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-    
-    
+
+
 
     background-color: lightgray
-
 }
 
-.side-nav-top{
+.side-nav-top {
     width: 100%;
     height: 250px;
-    min-height: 200px;  
+    min-height: 200px;
     overflow: auto;
-    
-    
-    
-    
+
+
+
+
 
     border: 1px solid black;
 }
 
-.side-nav-bottom{
+.side-nav-bottom {
     width: 100%;
     height: 60px;
     min-height: 60px;
-    
-    
+
+
     background-color: #010100;
 }
 
-    
+
 
 
 /* main content */
-div.main-container .main-content{
+div.main-container .main-content {
     width: calc(100% - 170px);
     height: 100%;
-    overflow: hidden;
+    
 
     background-color: lightblue;
 }
 
 /* main content top bar */
-.main-content-top-banner{
+.main-content-top-banner {
     width: 100%;
     height: 60px;
     text-align: right;
     line-height: 60px;
-    
+    overflow: hidden;
 
-    border: 1px solid black;
+
+    
 }
 
 /* main content center */
-.main-content-center{
+.main-content-center {
     width: 100%;
-    height: calc(100% - 60px)
-
-    border: 1px solid greenyellow;
+    height: calc(100% - 60px);
+    overflow: hidden;
+    
 }
 
-.main-content-center-top-nav{
+.main-content-center-top-nav {
     width: 100%;
     height: 60px;
-    
+
 
     border: 1px solid violet;
 }
 
-.main-content-center-album-cards{
+.main-content-center-album-cards {
+    
+    height: calc(100% - 60px);
     padding: 1rem;
+    overflow: auto;
+    flex-wrap: wrap;
     
 
-    
+
+
 }
 
-.album-card{
+.album-card {
     width: 12vw;
     height: 12vw;
-    margin-right: 5px;
+    margin-right: 25px;
     border: 1px solid red;
-    
+
 }
 
-.row-recently-played{
+.row-recently-played {
+    width: 100%;
     justify-content: space-between;
-    margin-bottom: 50px;
-    
-    
+    margin-bottom: 200px;
+
+
 }
-.row-created-for{
-   
-    
-    
+
+.row-created-for {
+    margin-bottom: 200px;
+    width: 100%;
+}
+
+
+.row-popular-artist{
+    width: 100%;
 }
 
 
 
 /* FOOTER */
-div.footer-container{
+div.footer-container {
 
     width: 100%;
     height: 80px;
     background-color: #282828;
-    
+
 }
