@@ -9,6 +9,11 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 /* COMMON CLASSES*/
 .flex {
     display: flex;
@@ -26,6 +31,19 @@ body {
     color: white;
 }
 
+.text-gray{
+    color: #a2a2a3;
+}
+
+.btn{
+    padding: .2rem .65rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #a2a2a3;
+}
+
+
+
 /* MAIN*/
 div.main-container {
     width: 100%;
@@ -40,24 +58,61 @@ div.main-container .side-nav {
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
-
-
-
-    background-color: lightgray
+    background-color: #010100;
 }
 
 .side-nav-top {
     width: 100%;
-    height: 250px;
     min-height: 200px;
     overflow: auto;
-
-
-
-
-
-    border: 1px solid black;
 }
+
+.side-nav-top .main-logo{
+    height: 80px;
+    padding: 1rem;
+}
+
+.side-nav-top .main-logo img{
+    width: 70%;
+}
+
+.side-nav-top .menu-list ul li{
+    padding: .3rem 1rem; 
+}
+
+.side-nav-top .menu-list ul img{
+    width: 1.5rem;
+    vertical-align: text-bottom;
+}
+
+.side-nav-top .create-playlist{
+    padding: 1rem; 
+}
+
+.side-nav-top .create-playlist h4{
+    text-transform: uppercase;
+    margin-bottom:.5rem;
+}
+
+.side-nav-top .create-playlist-button{
+    align-items: center;
+}
+
+.side-nav-top .create-playlist span{
+    margin-left: .5rem;
+}
+
+.side-nav-top .playlist{
+    padding: 0 1rem; 
+}
+
+.side-nav-top .playlist ul li{
+    padding: .3rem 0; 
+    list-style-type: none;
+    font-size: .7rem;
+}
+
+
 
 .side-nav-bottom {
     width: 100%;
