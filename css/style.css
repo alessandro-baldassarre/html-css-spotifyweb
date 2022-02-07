@@ -88,7 +88,7 @@ div.main-container .side-nav {
 }
 
 .create-playlist{
-    height: 100px;
+    height: 90px;
     padding: 1rem;
     
 }
@@ -106,14 +106,14 @@ div.main-container .side-nav {
 }
 
 .playlist{
-    height: calc(100% - (80px + 100px + 100px + 80px));
-    min-height: 70px;
+    height: calc(100% - (80px + 90px + 100px + 80px));
+    min-height: 85px;
     padding: 0 1rem;
     overflow: auto;
 }
 
 .playlist ul li{
-    padding: .3rem 0; 
+    padding: .5rem 0; 
     list-style-type: none;
     font-size: .7rem;
 }
@@ -145,9 +145,61 @@ div.main-container .side-nav {
     font-weight: bold;
 }
 
+/* side nav small */
+div.main-container .side-nav-small {
+    width: 50px;
+    height: 100%;
+    background-color: #010100;
+    overflow: hidden;
+    display: none;
+}
 
+.main-logo-small{
+    height: 40px;
+    padding: .5rem .7rem 0.5rem .7rem;
+    
+}
 
+.main-logo-small img{
+    width: 100%;
+}
 
+.menu-list-small{
+    height: calc(100% - 120px);
+    
+}
+.menu-list-small ul li{
+    list-style-type: none;
+    padding: .5rem .7rem 0 .7rem;
+}
+
+.menu-list-small ul img{
+    width: 100%;
+}
+
+.side-nav-bottom-small {
+    height: 50px;
+    padding: .5rem .7rem 0 .7rem;
+    text-align: center;
+
+}
+
+.side-nav-bottom-small img{
+    width: 70%;
+    margin-bottom: .5rem;
+
+}
+
+.side-nav-bottom-small .profile-user{
+    height: 40px;
+}
+.side-nav-bottom-small .profile-user img{
+    background-color: #a2a2a3;
+    border-radius: 50%;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
 
 /* main content */
 div.main-container .main-content {
@@ -250,7 +302,11 @@ div.footer-container {
 @media screen and (max-width:576px) {
 
     div.main-container .side-nav {
-        width: 50px;
+        display: none;
+    }
+
+    div.main-container .side-nav-small{
+        display: block;
     }
 
     div.main-container .main-content {
