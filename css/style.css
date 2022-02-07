@@ -55,58 +55,60 @@ div.main-container {
 div.main-container .side-nav {
     width: 225px;
     height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
     background-color: #010100;
+    overflow: hidden;
 }
 
-.side-nav-top {
-    width: 100%;
-    min-height: 200px;
-    overflow: auto;
-}
-
-.side-nav-top .main-logo{
+.main-logo{
     height: 80px;
     padding: 1rem;
+    
 }
 
-.side-nav-top .main-logo img{
+.main-logo img{
     width: 70%;
 }
 
-.side-nav-top .menu-list ul li{
-    padding: .3rem 1rem; 
+.menu-list{
+    height: 100px;
+    
+}
+.menu-list ul li{
+    padding: .3rem 1rem;
+    list-style-type: none;
 }
 
-.side-nav-top .menu-list ul img{
+.menu-list ul img{
     width: 1.5rem;
     vertical-align: text-bottom;
 }
 
-.side-nav-top .create-playlist{
-    padding: 1rem; 
+.create-playlist{
+    height: 100px;
+    padding: 1rem;
+    
 }
 
-.side-nav-top .create-playlist h4{
+.create-playlist h4{
     text-transform: uppercase;
     margin-bottom:.5rem;
 }
-
-.side-nav-top .create-playlist-button{
+.create-playlist-button{
     align-items: center;
 }
 
-.side-nav-top .create-playlist span{
+.create-playlist span{
     margin-left: .5rem;
 }
 
-.side-nav-top .playlist{
-    padding: 0 1rem; 
+.playlist{
+    height: calc(100% - (60px + 100px + 100px + 80px));
+    min-height: 70px;
+    padding: 0 1rem;
+    overflow: auto;
 }
 
-.side-nav-top .playlist ul li{
+.playlist ul li{
     padding: .3rem 0; 
     list-style-type: none;
     font-size: .7rem;
@@ -117,10 +119,9 @@ div.main-container .side-nav {
 .side-nav-bottom {
     width: 100%;
     height: 60px;
-    min-height: 60px;
 
 
-    background-color: #010100;
+    background-color: white;
 }
 
 
