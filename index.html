@@ -31,42 +31,46 @@
 
             <!-- navigation large container on the left of the page -->
             <nav class="side-nav text-gray">
-                
-                    <div class="main-logo">
-                        <img src="img/logo.svg" alt="Spotify logo">
+
+                <div class="main-logo">
+                    <img src="img/logo.svg" alt="Spotify logo">
+                </div>
+                <div class="menu-list">
+                    <ul>
+                        <li><a href="#" class="text-gray text-small"><img src="img/home.svg" alt="home icon"> Home</li>
+                        </a>
+                        <li><a href="#" class="text-gray text-small"><img src="img/search.svg" alt="search icon"> Cerca
+                        </li></a>
+                        <li><a href="#" class="text-gray text-small"><img src="img/libreria.svg" alt="home icon"> La tua
+                                libreria</li></a>
+                    </ul>
+                </div>
+                <div class="create-playlist">
+                    <h4 class="text-white text-small">Playlist</h4>
+                    <div class="create-playlist-button flex">
+                        <a href="#" class="btn-square">+</a><span>Crea Playlist</span>
                     </div>
-                    <div class="menu-list">
-                        <ul>
-                            <li><a href="#" class="text-gray text-small"><img src="img/home.svg" alt="home icon"> Home</li></a>
-                            <li><a href="#" class="text-gray text-small"><img src="img/search.svg" alt="search icon"> Cerca</li></a>
-                            <li><a href="#" class="text-gray text-small"><img src="img/libreria.svg" alt="home icon"> La tua libreria</li></a>
-                        </ul>
-                    </div>
-                    <div class="create-playlist">
-                        <h4 class="text-white text-small">Playlist</h4>
-                        <div class="create-playlist-button flex">
-                            <a href="#" class="btn-square">+</a><span>Crea Playlist</span>
-                        </div>
-                    </div>
-                    <div class="playlist">
-                        <ul>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                            <li><a href="" class="text-gray"></a>Nome Playlist</li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="playlist">
+                    <ul>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                        <li><a href="" class="text-gray"></a>Nome Playlist</li>
+                    </ul>
+                </div>
 
                 <div class="side-nav-bottom text-gray">
                     <img src="img/download.svg" alt="download icon"><span class="text-small"> Installa app</span>
                     <hr>
                     <div class="profile-user">
-                        <img src="img/profile.svg" alt="profile icon"><span class="text-white text-small"> John Doe</span>
+                        <img src="img/profile.svg" alt="profile icon"><span class="text-white text-small"> John
+                            Doe</span>
                     </div>
-                    
+
 
 
                 </div>
@@ -75,35 +79,37 @@
 
             <!-- navigation extra small screen container on the left of the page -->
             <nav class="side-nav-small text-gray">
-                
+
                 <div class="main-logo-small">
                     <img src="img/logo-small.svg" alt="Spotify logo">
                 </div>
                 <div class="menu-list-small">
                     <ul>
                         <li><a href="#" class="text-gray text-small"><img src="img/home.svg" alt="home icon"></li></a>
-                        <li><a href="#" class="text-gray text-small"><img src="img/search.svg" alt="search icon"></li></a>
-                        <li><a href="#" class="text-gray text-small"><img src="img/libreria.svg" alt="home icon"></li></a>
+                        <li><a href="#" class="text-gray text-small"><img src="img/search.svg" alt="search icon"></li>
+                        </a>
+                        <li><a href="#" class="text-gray text-small"><img src="img/libreria.svg" alt="home icon"></li>
+                        </a>
                     </ul>
                 </div>
 
-            <div class="side-nav-bottom-small text-gray">
-                <img src="img/download.svg" alt="download icon">
-                <div class="profile-user">
-                    <img src="img/profile.svg" alt="profile icon">
+                <div class="side-nav-bottom-small text-gray">
+                    <img src="img/download.svg" alt="download icon">
+                    <div class="profile-user">
+                        <img src="img/profile.svg" alt="profile icon">
+                    </div>
+
+
+
                 </div>
-                
 
-
-            </div>
-
-        </nav>
+            </nav>
 
             <!-- container with the main content of the page -->
             <section class="main-content">
                 <div class="main-content-top-banner">
 
-                    <a href="#" class="btn text-white text-small">effettua l'upgrade</a> 
+                    <a href="#" class="btn text-white text-small">effettua l'upgrade</a>
                 </div>
 
                 <div class="main-content-center">
@@ -121,36 +127,95 @@
                     </nav>
 
                     <div class="main-content-center-song-cards">
-                        <h1 class="text-white" >Recently played</h1>
+                        <h1 class="text-white">Recently played</h1>
                         <div class="row recently-played flex">
                             <div class="song-card">
-                                <img src="img/metal_lifting.jpg" alt="cover of metal song">
+                                <a href="#">
+                                    <div class="img-song-card relative">
+                                        <img src="img/metal_lifting.jpg" class="mb-10" alt="cover of metal song">
+                                        <div class="play-icon absolute flex text-white">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-small text-white mb-10">Heavy Metal</h4>
+                                    <p class="text-extra-small text-gray">Subtitle</p>
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <div class="img-song-card relative">
+                                    <img src="img/stranger.jpeg" alt="cover of stranger things album">
+                                    <div class="play-icon absolute flex text-white">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </div>
+                                    <h4 class="text-small text-white mb-10">Stranger Things, Vol.1 (a Netflix Original
+                                        Series Soundtrack)</h4>
+                                    <p class="text-extra-small text-gray">Kyle Dixon & Michael Stein</p>
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <div class="img-song-card relative">
+                                        <img src="img/aquietplace.jpeg" alt="cover of a quiet place song">
+                                        <div class="play-icon absolute flex text-white">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-small text-white mb-10">A quiet place</h4>
+                                    <p class="text-extra-small text-gray">Subtitle</p>
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <div class="img-song-card relative">
+                                        <img src="img/split.jpeg" alt="cover of split's song">
+                                        <div class="play-icon absolute flex text-white">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-small text-white mb-10">Split</h4>
+                                    <p class="text-extra-small text-gray">Subtitle</p>
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <div class="img-song-card relative">
+                                        <img src="img/cure.jpeg" alt="cover of a cure for welness songs">
+                                        <div class="play-icon absolute flex text-white">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-small text-white mb-10">A cure for welness</h4>
+                                    <p class="text-extra-small text-gray">Subtitle</p>
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <div class="img-song-card relative">
+                                        <img src="img/sinister.jpeg" alt="cover of sinister's song">
+                                        <div class="play-icon absolute flex text-white">
+                                            <i class="far fa-play-circle"></i>
+                                        </div>
+                                    </div>
+                                    <h4 class="text-small text-white mb-10">Sinister</h4>
+                                    <p class="text-extra-small text-gray">Subtitle</p>
+                                </a>
                             </div>
 
                         </div>
 
-                        <h1 class="text-white" >recently played</h1>
+                        <h1 class="text-white">recently played</h1>
                         <div class="row created-for flex">
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <img src="img/mixdaily.jpeg" alt="cover of a quiet place song">
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <img src="img/mixdaily.jpeg" alt="cover of a quiet place song">
+                                </a>
                             </div>
                             <div class="song-card"></div>
                             <div class="song-card"></div>
@@ -159,23 +224,27 @@
 
                         </div>
 
-                        <h1 class="text-white" >recently played</h1>
+                        <h1 class="text-white">recently played</h1>
                         <div class="row popular-artist flex">
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <img src="img/mixdaily.jpeg" alt="cover of a quiet place song">
+                                </a>
                             </div>
                             <div class="song-card">
-                                <img src="img/mixdaily.jpeg" alt="">
+                                <a href="">
+                                    <img src="img/mixdaily.jpeg" alt="cover of a quiet place song">
+                                </a>
                             </div>
                             <div class="song-card"></div>
                             <div class="song-card"></div>
                             <div class="song-card"></div>
                             <div class="song-card"></div>
-                            
-                            
+
+
 
                         </div>
-                        
+
 
 
                     </div>
