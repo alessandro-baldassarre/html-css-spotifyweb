@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify Web</title>
 
+    <!-- link favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" />
+
     <!-- link font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
@@ -210,13 +213,23 @@
                         <div class="row created-for flex">
                             <div class="song-card">
                                 <a href="">
-                                    <img src="img/radar.jpeg" class="mb-10" alt="cover of radar's album">
-                                    <h4 class="text-small text-white mb-10">Realease Radar</h4>
+                                    <div class="img-song-card relative">
+                                    <img src="img/radar.jpeg" class="mb-10" alt="cover of radar release album">
+                                    <div class="play-icon absolute flex text-white">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </div>
+                                    <h4 class="text-small text-white mb-10">Release Radar</h4>
                                 </a>
                             </div>
                             <div class="song-card">
                                 <a href="">
-                                    <img src="img/mixdaily.jpeg" class="mb-10" alt="cover of a quiet place song">
+                                    <div class="img-song-card relative">
+                                    <img src="img/mixdaily.jpeg" class="mb-10" alt="cover of daily mix album">
+                                    <div class="play-icon absolute flex text-white">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </div>
                                     <h4 class="text-small text-white mb-10">Daily Mix 1</h4>
                                 </a>
                             </div>
@@ -232,13 +245,23 @@
                         <div class="row popular-artist flex">
                             <div class="song-card">
                                 <a href="">
-                                    <img src="img/youg.jpeg" class="mb-10 br-circle" alt="cover of album">
-                                    <h4 class="text-small text-white mb-10">Lana del Rey</h4>
+                                    <div class="img-song-card relative">
+                                    <img src="img/youg.jpeg" class="mb-10" alt="cover of Lana del Rey album">
+                                    <div class="play-icon absolute flex text-white">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </div>
+                                    <h4 class="text-small text-white mb-10">Lana Del Rey</h4>
                                 </a>
                             </div>
                             <div class="song-card">
                                 <a href="">
-                                    <img src="img/einaudi.jpeg" class="mb-10 br-circle" alt="picture of Einaudi">
+                                    <div class="img-song-card relative">
+                                    <img src="img/einaudi.jpeg" class="mb-10 br-circle" alt="cover of Einaudi album">
+                                    <div class="play-icon absolute flex text-white">
+                                        <i class="far fa-play-circle"></i>
+                                    </div>
+                                </div>
                                     <h4 class="text-small text-white mb-10">Ludovico Einaudi</h4>
                                 </a>
                             </div>
@@ -268,8 +291,19 @@
     <footer>
         <!-- footer container with the controls of the sound and the songs -->
         <div class="footer-container flex">
-            <div class="footer-left text-gray">
-                <p>left footer img + icons</p>
+            <div class="footer-left text-white flex">
+                <div class="song-running flex">
+                    <img src="img/sinister.jpeg" alt="cover of sinister song">
+                    <div class="song-running-title">
+                        <h4 class="text-extra-small">Sinister</h4>
+                        <p class="text-extra-small text-gray">Brano Nome</p>
+                    </div>
+                </div>
+                <div class="footer-icons text-small text-gray">
+                    <i class="far fa-heart mr-5"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+
             </div>
             <div class="footer-center text-gray">
                 <p>central footer play song controls</p>
