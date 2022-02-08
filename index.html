@@ -24,6 +24,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -35,18 +36,21 @@
             <!-- navigation large container on the left of the page -->
             <nav class="side-nav text-gray">
 
+                <!-- logo -->
                 <div class="main-logo">
                     <a href=""><img src="img/logo.svg" alt="Spotify logo"></a>
                 </div>
+
+                <!-- menu list of the navigation on the left -->
                 <div class="menu-list">
                     <ul>
                         <li class="active"><a href="#" class="text-white text-small"><img src="img/home.svg"
-                                    alt="home icon"> Home</li>
-                        </a>
-                        <li><a href="#" class="text-gray text-small"><img src="img/search.svg" alt="search icon"> Cerca
-                        </li></a>
+                                    alt="home icon"> Home</a></li>
+                        
+                        <li><a href="#" class="text-gray text-small"><img src="img/search.svg" alt="search icon"> Cerca</a>
+                        </li>
                         <li><a href="#" class="text-gray text-small"><img src="img/libreria.svg" alt="home icon"> La tua
-                                libreria</li></a>
+                                libreria</a></li>
                     </ul>
                 </div>
                 <div class="create-playlist">
@@ -55,6 +59,8 @@
                         <a href="#" class="btn-square">+</a><span>Crea Playlist</span>
                     </div>
                 </div>
+
+                <!-- list of the playlist of the user -->
                 <div class="playlist">
                     <ul>
                         <li><a href="#" class="text-gray">Nome Playlist</a></li>
@@ -66,7 +72,7 @@
                         <li><a href="#" class="text-gray">Nome Playlist</a></li>
                     </ul>
                 </div>
-
+                <!-- bottom part of the navigation with user's info -->
                 <div class="side-nav-bottom text-gray">
                     <a href="#" class="text-gray"><img src="img/download.svg" alt="download icon"><span
                             class="text-small"> Installa app</span></a>
@@ -76,8 +82,6 @@
                                 John
                                 Doe</span></a>
                     </div>
-
-
 
                 </div>
 
@@ -102,27 +106,25 @@
                     <div class="profile-user">
                         <img src="img/profile.svg" alt="profile icon">
                     </div>
-
-
-
                 </div>
 
             </nav>
 
             <!-- container with the main content of the page -->
             <section class="main-content">
+                <!-- top banner with the button for the upgrade option -->
                 <div class="main-content-top-banner">
-
                     <a href="#" class="btn text-white text-small">effettua l'upgrade</a>
                 </div>
 
+                <!-- main content with the cover songs divided by category and on the top the navigation options also divided by category -->
                 <div class="main-content-center">
                     <nav class="main-content-center-top-nav">
 
                         <ul>
                             <li class="relative"><a href="#" class="text-gray text-small">in evidenza</a>
                             <div class="bottom-active-line absolute"></div></li>
-                            <li><a href="#" class="text-gray text-small">podcast</a</li> <li><a href="#"
+                            <li><a href="#" class="text-gray text-small">podcast</a></li> <li><a href="#"
                                         class="text-gray text-small">classifiche</a></li>
                             <li><a href="#" class="text-gray text-small">generi e mood</a></li>
                             <li><a href="#" class="text-gray text-small">nuove uscite</a></li>
@@ -130,10 +132,12 @@
                         </ul>
 
                     </nav>
-
+                    <!-- first row and first category with the cover songs -->
                     <div class="main-content-center-song-cards">
                         <h1 class="text-white">Recently played</h1>
                         <div class="row recently-played flex">
+
+                            <!-- container that groups the cover of the song and the description -->
                             <div class="song-card">
                                 <div class="img-song-card relative">
                                     <img src="img/metal_lifting.jpg" class="mb-10" alt="cover of metal song">
@@ -198,6 +202,7 @@
 
                         </div>
 
+                        <!-- second row and second category with the cover songs -->
                         <h1 class="text-white mb-10">Creato per John Doe</h1>
                         <p class="text-extra-small text-gray">Più ascolti, più accurati saranno i suggerimenti.</p>
                         <div class="row created-for flex">
@@ -226,12 +231,13 @@
 
                         </div>
 
+                        <!-- third row and third category with the cover songs -->
                         <h1 class="text-white mb-10">Artisti più popolari</h1>
                         <p class="text-extra-small text-gray">Più ascolti, più accurati saranno i suggerimenti.</p>
                         <div class="row popular-artist flex">
                             <div class="song-card">
                                 <div class="img-song-card relative">
-                                    <img src="img/youg.jpeg" class="mb-10" alt="cover of Lana del Rey album">
+                                    <img src="img/youg.jpeg" class="mb-10 br-circle" alt="cover of Lana del Rey album">
                                     <div class="play-icon absolute flex text-white">
                                         <i class="far fa-play-circle"></i>
                                     </div>
@@ -252,14 +258,9 @@
                             <div class="song-card"></div>
                             <div class="song-card"></div>
 
-
-
                         </div>
 
-
-
                     </div>
-
 
                 </div>
 
@@ -273,6 +274,8 @@
     <footer>
         <!-- footer container with the controls of the sound and the songs -->
         <div class="footer-container flex">
+
+            <!-- left part of the footer with cover and name of the song currently running -->
             <div class="footer-left text-white flex">
                 <div class="song-running flex">
                     <img src="img/sinister.jpeg" alt="cover of sinister song">
@@ -288,6 +291,8 @@
                 </div>
 
             </div>
+
+            <!-- center part of the footer with controls of currently running song-->
             <div class="footer-center flex">
                 <div class="song-running-controls text-white text-small flex mb-10">
                     <i class="fas fa-random text-white "></i>
@@ -306,6 +311,8 @@
                     <div class="total-time text-extra-small text-white">4.35</div>
                 </div>
             </div>
+
+            <!-- right part of the footer with volume controls -->
             <div class="footer-right text-gray flex">
                 <div class="footer-icons text-small flex mr-5">
                     <i class="fas fa-list-ul mr-5 text-white"></i>
@@ -318,9 +325,7 @@
                     </div>
                 </div>
             </div>
-
-
-
+            
         </div>
 
     </footer>
