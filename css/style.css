@@ -391,7 +391,7 @@ div.footer-container {
 }
 
 div.footer-container .footer-left{
-    width: 225px;
+    width: 200px;
     align-items: center;
     justify-content: space-between;
     
@@ -422,7 +422,7 @@ div.footer-container .footer-center{
     width: 35%;
     flex-direction: column;
     align-items: center;
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 .footer-center .song-running-controls{
