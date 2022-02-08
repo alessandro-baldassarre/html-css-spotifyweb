@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    min-width: 450px;
 }
 
 a{
@@ -79,6 +80,11 @@ a{
     background-color: #5a5a5a;
 }
 
+.active{
+    border-left: 2px solid lawngreen;
+    color: white;
+}
+
 /* MAIN*/
 div.main-container {
     width: 100%;
@@ -113,9 +119,18 @@ div.main-container .side-nav {
     list-style-type: none;
 }
 
+.menu-list ul li a:hover{
+    color: white;
+}
+
 .menu-list ul img{
     width: 1.5rem;
     vertical-align: text-bottom;
+    opacity: 0.8;
+}
+
+.menu-list ul li a:hover img{
+    opacity: 1;
 }
 
 .create-playlist{
@@ -130,6 +145,15 @@ div.main-container .side-nav {
 }
 .create-playlist-button{
     align-items: center;
+}
+
+.create-playlist-button:hover{
+    color: white;
+    cursor: pointer;
+}
+
+.create-playlist-button:hover a{
+    background-color: white;
 }
 
 .create-playlist span{
@@ -149,11 +173,17 @@ div.main-container .side-nav {
     font-size: .7rem;
 }
 
-
+.playlist ul li:hover a{
+    color: white;
+}
 
 .side-nav-bottom {
     height: 80px;
     padding: 1rem;
+}
+
+.side-nav-bottom a:hover{
+    color: white;
 }
 
 .side-nav-bottom img{
@@ -252,8 +282,12 @@ div.main-container .main-content {
 
 .main-content-top-banner a{
     text-transform: uppercase;
-    
 }
+
+.main-content-top-banner a:hover{
+    font-size: .9rem;
+}
+
 
 
 /* main content center */
@@ -278,7 +312,10 @@ div.main-container .main-content {
     list-style-type: none;
     text-transform: uppercase;
     padding: 0 0.5rem;
+}
 
+.main-content-center-top-nav ul a:hover{
+    color: white;
 }
 
 .main-content-center-song-cards {
@@ -300,6 +337,10 @@ div.main-container .main-content {
     margin-right: 1rem;
     text-align: center;
 
+}
+
+.song-card:hover{
+    cursor: pointer;
 }
 
 .song-card img {
@@ -348,11 +389,23 @@ div.footer-container .footer-left{
 
 .footer-left .song-running{
     align-items: center;
+    margin-right: 1rem;
 }
 
 .footer-left .song-running img{
     width: 40px;
     margin-right: .5rem;
+}
+
+.footer-left p:hover{
+    cursor: pointer;
+    color: white;
+    text-decoration: underline;
+}
+
+.footer-left i:hover{
+    cursor: pointer;
+    color: white;
 }
 
 div.footer-container .footer-center{
@@ -362,9 +415,17 @@ div.footer-container .footer-center{
 }
 
 .footer-center .song-running-controls{
-    width: 150px;
-    justify-content: space-between;
+    width: 225px;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.footer-center i:hover{
+    cursor: pointer;
+}
+
+.footer-center .fa-play-circle:hover{
+    transform: scale(1.2);
 }
 
 .song-running-time{
@@ -394,7 +455,7 @@ div.footer-container .footer-center{
 }
 
 div.footer-container .footer-right{
-    width: 180px;
+    width: 220px;
     align-items: center;
     padding: 0 1rem;
 
@@ -403,6 +464,10 @@ div.footer-container .footer-right{
 .footer-right .footer-icons{
     width: 50%;
     justify-content: space-between;
+}
+
+.footer-right i:hover{
+    cursor: pointer;
 }
 
 .footer-right .bar{
