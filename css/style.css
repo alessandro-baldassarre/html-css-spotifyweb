@@ -7,7 +7,8 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    min-width: 450px;
+    min-width: 310px;
+    
 }
 
 a{
@@ -60,6 +61,7 @@ a{
     border-radius: 25px;
     border: 1px solid white;
     font-weight: bold;
+    font-size: .7rem;
 }
 
 .mb-10{
@@ -236,6 +238,7 @@ div.main-container .side-nav-small {
 
 .menu-list-small ul img{
     width: 100%;
+    opacity: 0.7;
 }
 
 .side-nav-bottom-small {
@@ -285,10 +288,17 @@ div.main-container .main-content {
 }
 
 .main-content-top-banner a:hover{
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
-
+.bottom-active-line{
+    width: 35px;
+    height: 2px;
+    background-color: lawngreen;
+    bottom: -.5rem;
+    left: 50%;
+    transform: translate(-50%);
+}
 
 /* main content center */
 .main-content-center {
@@ -302,7 +312,6 @@ div.main-container .main-content {
 
 .main-content-center-top-nav {
     width: 100%;
-    /* height: 60px; */
     text-align: center;
     line-height: 60px;
 }
@@ -328,7 +337,7 @@ div.main-container .main-content {
 .row {
     width: 100%;
     justify-content: space-between;
-    margin: 30px 0;
+    margin: 40px 0;
 
 }
 
@@ -336,6 +345,7 @@ div.main-container .main-content {
     width: 160px;
     margin-right: 1rem;
     text-align: center;
+    margin-bottom: 5px;
 
 }
 
@@ -376,11 +386,11 @@ div.footer-container {
     background-color: #282929;
     justify-content: space-between;
     align-items: center;
+    padding: 0 1rem;
 
 }
 
 div.footer-container .footer-left{
-    padding: 0 1rem;
     width: 225px;
     align-items: center;
     justify-content: space-between;
@@ -412,6 +422,7 @@ div.footer-container .footer-center{
     width: 35%;
     flex-direction: column;
     align-items: center;
+    margin: 0 1rem;
 }
 
 .footer-center .song-running-controls{
@@ -457,12 +468,10 @@ div.footer-container .footer-center{
 div.footer-container .footer-right{
     width: 220px;
     align-items: center;
-    padding: 0 1rem;
-
 }
 
 .footer-right .footer-icons{
-    width: 50%;
+    width: 55%;
     justify-content: space-between;
 }
 
@@ -471,7 +480,7 @@ div.footer-container .footer-right{
 }
 
 .footer-right .bar{
-    width: 50%;
+    width: 45%;
 
 }
 
@@ -522,7 +531,7 @@ div.footer-container .footer-right{
 }
 
 /* extra-small */
-@media screen and (max-width:576px) {
+@media screen and (min-width:480px) and (max-width:576px) {
 
     div.main-container .side-nav {
         display: none;
@@ -543,8 +552,46 @@ div.footer-container .footer-right{
 
     .song-card {
         width: calc((100% - 2rem)/2);
-
-
     }
 
+}
+
+/* smartphone */
+@media screen and (max-width:479px){
+    div.main-container .side-nav {
+        display: none;
+    }
+
+    div.main-container .side-nav-small{
+        display: block;
+    }
+
+    div.main-container .main-content {
+        width: calc(100% - 50px);
+    }
+
+    .row {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .song-card {
+        width: calc((100% - 2rem)/2);
+    }
+
+    div.footer-container .footer-left{
+        display: none;
+    }
+    
+    div.footer-container .footer-right{
+        width: 140px;
+    }
+
+    .footer-center .song-running-controls{
+        width: 160px;
+    }
+
+    .bar .bar-live:hover .cue-ball-end-bar{
+        display: none;
+    }
 }
