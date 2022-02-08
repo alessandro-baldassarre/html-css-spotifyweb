@@ -382,6 +382,15 @@ div.footer-container .footer-center{
     width: 15%;
     border-radius: 5px;
     background-color: #c1c1c1;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.bar-live .cue-ball-end-bar{
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    display: none;
 }
 
 div.footer-container .footer-right{
@@ -403,6 +412,15 @@ div.footer-container .footer-right{
 
 .footer-right .bar-live{
     width: 35%;
+}
+
+.bar .bar-live:hover{
+    cursor: pointer;
+    background-color: lawngreen;
+}
+
+.bar .bar-live:hover .cue-ball-end-bar{
+    display: block;
 }
 
 
