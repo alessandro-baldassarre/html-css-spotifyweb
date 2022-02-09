@@ -333,12 +333,12 @@ div.main-container .main-content {
 
 .row {
     width: 100%;
-    justify-content: space-between;
+    flex-wrap: wrap;
     margin: 40px 0;
 }
 
 .song-card {
-    width: 200px;
+    width: calc((100% - 7rem)/7);
     margin-right: 1rem;
     text-align: center;
     margin-bottom: 5px;
@@ -496,6 +496,27 @@ div.footer-container .footer-right {
 
 /* MEDIA QUERY */
 
+/* extra large */
+@media screen and (min-width:1201px) and (max-width:1400px) {
+    .row {
+        width: 100%;
+        justify-content: space-between;
+        margin: 40px 0;
+    }
+    
+    .song-card {
+        width: 143px;
+        margin-right: 1rem;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .plus{
+        display: none;
+    }
+
+}
+
 /* large */
 @media screen and (min-width:993px) and (max-width:1200px) {
     .row {
@@ -505,6 +526,10 @@ div.footer-container .footer-right {
 
     .song-card {
         width: calc((100% - 6rem)/6)
+    }
+
+    .plus{
+        display: none;
     }
 }
 
@@ -519,6 +544,10 @@ div.footer-container .footer-right {
     .song-card {
         width: calc((100% - 4rem)/4)
     }
+
+    .plus{
+        display: none;
+    }
 }
 
 /* small*/
@@ -531,6 +560,10 @@ div.footer-container .footer-right {
 
     .song-card {
         width: calc((100% - 2rem)/2)
+    }
+
+    .plus{
+        display: none;
     }
 }
 
@@ -558,6 +591,10 @@ div.footer-container .footer-right {
         width: calc((100% - 2rem)/2);
     }
 
+    .plus{
+        display: none;
+    }
+
 }
 
 /* smartphone */
@@ -581,6 +618,10 @@ div.footer-container .footer-right {
 
     .song-card {
         width: calc((100% - 2rem)/2);
+    }
+
+    .plus{
+        display: none;
     }
 
     div.footer-container .footer-left {
