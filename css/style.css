@@ -63,6 +63,8 @@ a {
     border: 1px solid white;
     font-weight: bold;
     font-size: .7rem;
+    background-color: #090a12;
+    text-transform: uppercase;
 }
 
 .mb-10 {
@@ -285,12 +287,10 @@ div.main-container .main-content {
     padding-right: 1rem;
 }
 
-.main-content-top-banner a {
-    text-transform: uppercase;
-}
 
-.main-content-top-banner a:hover {
-    font-size: .8rem;
+.main-content-top-banner button:hover {
+    transform:scale(1.1);
+    cursor: pointer;
 }
 
 .bottom-active-line {
