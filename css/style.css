@@ -505,10 +505,18 @@ div.footer-container .footer-right {
     }
     
     .song-card {
-        width: 140px;
+        width: 142px;
         margin-right: 1rem;
         text-align: center;
         margin-bottom: 5px;
+    }
+
+    .song-card h4{
+        font-size: .6rem;
+    }
+
+    .song-card p{
+        font-size: .5rem;
     }
 
     .plus{
@@ -528,6 +536,14 @@ div.footer-container .footer-right {
         width: calc((100% - 6rem)/6)
     }
 
+    .song-card h4{
+        font-size: .6rem;
+    }
+
+    .song-card p{
+        font-size: .5rem;
+    }
+
     .plus{
         display: none;
     }
@@ -543,6 +559,14 @@ div.footer-container .footer-right {
 
     .song-card {
         width: calc((100% - 4rem)/4)
+    }
+
+    .song-card h4{
+        font-size: .7rem;
+    }
+
+    .song-card p{
+        font-size: .6rem;
     }
 
     .plus{
