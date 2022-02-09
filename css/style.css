@@ -338,7 +338,7 @@ div.main-container .main-content {
 }
 
 .song-card {
-    width: 160px;
+    width: 200px;
     margin-right: 1rem;
     text-align: center;
     margin-bottom: 5px;
@@ -497,7 +497,16 @@ div.footer-container .footer-right {
 /* MEDIA QUERY */
 
 /* large */
-@media screen and (min-width:993px) and (max-width:1200px) {}
+@media screen and (min-width:993px) and (max-width:1200px) {
+    .row {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .song-card {
+        width: calc((100% - 6rem)/6)
+    }
+}
 
 /* medium */
 @media screen and (min-width:769px) and (max-width:992px) {
